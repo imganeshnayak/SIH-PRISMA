@@ -1,0 +1,174 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 230px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-top {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0 16px 2px;
+}
+
+.sidebar-emblem {
+  width: 42px;
+  height: 54px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.15);
+  flex-shrink: 0;
+}
+
+.sidebar-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.sidebar-ncrb {
+  font-family: 'DM Serif Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #0d1b2a;
+  line-height: 1.2;
+}
+
+.sidebar-ministry {
+  font-size: 11px;
+  color: #555;
+  line-height: 1.3;
+}
+
+.sidebar-govt {
+  font-size: 10px;
+  color: #777;
+  line-height: 1.3;
+}
+
+.sidebar-sanskrit {
+  display: block;
+  font-size: 8px;
+  font-family: serif;
+  color: #555;
+  padding: 0 16px 12px;
+}
+
+.sidebar-case-selector {
+  padding: 0 12px 12px;
+}
+
+.case-selector-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #374151;
+  padding: 0 4px 4px;
+}
+
+.case-selector-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.case-icon {
+  color: #999;
+  flex-shrink: 0;
+}
+
+.case-label {
+  flex: 1;
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.case-chevron {
+  color: #999;
+  flex-shrink: 0;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  margin: 2px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #555;
+  font-size: 13.5px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar-link:hover {
+  background: #f3f4f6;
+}
+
+.sidebar-link.active {
+  background: #1a3a4a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.sidebar-bottom {
+  position: relative;
+  padding: 16px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 80px;
+}
+
+.sidebar-bottom-building {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: url('/images/building.jpg') center bottom / cover no-repeat;
+  filter: grayscale(100%) brightness(0.85);
+  opacity: 0.15;
+  mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
+}
+
+.sidebar-tagline {
+  position: relative;
+  z-index: 1;
+  font-size: 8.5px;
+  letter-spacing: 0.28em;
+  color: #999;
+  font-weight: 600;
+  line-height: 1.7;
+}

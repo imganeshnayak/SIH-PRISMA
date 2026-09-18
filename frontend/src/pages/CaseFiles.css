@@ -1,0 +1,833 @@
+.case-files {
+  background: #f5f5f0;
+  padding: 28px 32px;
+  min-height: calc(100vh - 56px);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Top Section ────────────────────────────────────── */
+
+.cf-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #1a3a4a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  transition: opacity 0.2s;
+}
+
+.cf-back-link:hover {
+  opacity: 0.7;
+}
+
+.cf-top-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cf-top-left {
+  flex: 1;
+}
+
+.cf-case-number-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.cf-case-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0D1B2A;
+  margin: 0;
+}
+
+.cf-copy-btn {
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 5px 7px;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  transition: all 0.15s;
+}
+
+.cf-copy-btn:hover {
+  background: #f3f4f6;
+  color: #1a3a4a;
+}
+
+.cf-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0fdf4;
+  color: #16a34a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cf-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #16a34a;
+}
+
+.cf-case-title {
+  font-size: 18px;
+  color: #374151;
+  margin: 0;
+}
+
+.cf-case-actions-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a3a4a;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.cf-case-actions-btn:hover {
+  background: #f9fafb;
+}
+
+/* ── Metadata Row ───────────────────────────────────── */
+
+.cf-metadata-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-top: 20px;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.cf-metadata-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cf-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.cf-meta-item svg {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.cf-metadata-right {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* ── Assigned Officers ──────────────────────────────── */
+
+.cf-assigned-officers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cf-officers-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.cf-officers-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cf-officer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.cf-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cf-avatar-more {
+  background: #e5e7eb;
+  color: #6b7280;
+}
+
+.cf-officer-name {
+  font-size: 11px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.cf-io-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.cf-io-row svg {
+  color: #9ca3af;
+}
+
+/* ── Case Progress ──────────────────────────────────── */
+
+.cf-case-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+
+.cf-progress-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cf-progress-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.cf-progress-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0D1B2A;
+  line-height: 1.1;
+}
+
+.cf-progress-bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.cf-progress-fill {
+  height: 100%;
+  background: #1a3a4a;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.cf-progress-updated {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* ── Tabs ───────────────────────────────────────────── */
+
+.cf-tabs {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.cf-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cf-tab:hover {
+  background: #f9fafb;
+}
+
+.cf-tab.active {
+  background: #1a3a4a;
+  color: #fff;
+  border-color: #1a3a4a;
+}
+
+/* ── Main Content ───────────────────────────────────── */
+
+.cf-content {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* ── Case Folders Section ───────────────────────────── */
+
+.cf-folders-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.cf-folders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.cf-folders-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0D1B2A;
+  margin: 0 0 4px 0;
+}
+
+.cf-folders-subtitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.cf-folders-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cf-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cf-search-icon {
+  position: absolute;
+  left: 10px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.cf-search-input {
+  padding: 8px 12px 8px 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #374151;
+  background: #fff;
+  outline: none;
+  width: 180px;
+  transition: border-color 0.15s;
+}
+
+.cf-search-input:focus {
+  border-color: #1a3a4a;
+}
+
+.cf-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.cf-new-folder-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid #1a3a4a;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a3a4a;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cf-new-folder-btn:hover {
+  background: #f0f5f5;
+}
+
+.cf-view-toggle {
+  display: flex;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cf-view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: #fff;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cf-view-btn.active {
+  background: #1a3a4a;
+  color: #fff;
+}
+
+.cf-view-btn:not(.active):hover {
+  background: #f3f4f6;
+}
+
+/* ── Folder Grid ────────────────────────────────────── */
+
+.cf-folders-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.cf-folder-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.cf-folder-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-color: #d1d5db;
+}
+
+.cf-folder-card-menu {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.cf-menu-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.cf-folder-card:hover .cf-menu-btn {
+  opacity: 1;
+}
+
+.cf-menu-btn:hover {
+  color: #374151;
+}
+
+.cf-folder-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.cf-folder-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cf-folder-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0D1B2A;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cf-folder-count {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.cf-folder-updated {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* ── Create New Folder Card ─────────────────────────── */
+
+.cf-folder-create {
+  border-style: dashed;
+  border-color: #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cf-folder-create:hover {
+  border-color: #1a3a4a;
+  background: #fafafa;
+}
+
+.cf-folder-create-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cf-folder-create:hover .cf-folder-create-inner {
+  color: #1a3a4a;
+}
+
+/* ── Info Sidebar ───────────────────────────────────── */
+
+.cf-info-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Case Information Card ──────────────────────────── */
+
+.cf-info-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.cf-info-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cf-info-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0D1B2A;
+  margin: 0;
+}
+
+.cf-edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cf-edit-btn:hover {
+  background: #f3f4f6;
+  color: #1a3a4a;
+}
+
+.cf-info-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cf-info-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cf-info-label {
+  font-size: 11px;
+  color: #9ca3af;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.cf-info-value {
+  font-size: 13px;
+  color: #374151;
+}
+
+.cf-info-value.bold {
+  font-weight: 600;
+  color: #0D1B2A;
+}
+
+.cf-info-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #f0fdf4;
+  color: #16a34a;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.cf-info-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #16a34a;
+}
+
+.cf-info-description {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Storage Card ───────────────────────────────────── */
+
+.cf-storage-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.cf-storage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cf-storage-title-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0D1B2A;
+}
+
+.cf-storage-title-row svg {
+  color: #6b7280;
+}
+
+.cf-storage-text {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.cf-storage-bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.cf-storage-fill {
+  height: 100%;
+  background: #1a3a4a;
+  border-radius: 3px;
+}
+
+.cf-storage-percent {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ── Recent Activity Card ───────────────────────────── */
+
+.cf-activity-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.cf-activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.cf-activity-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0D1B2A;
+  margin: 0;
+}
+
+.cf-view-all-link {
+  font-size: 12px;
+  color: #1a3a4a;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 500;
+}
+
+.cf-view-all-link:hover {
+  opacity: 0.7;
+}
+
+.cf-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cf-activity-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.cf-activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.cf-activity-dot.green {
+  background: #16a34a;
+}
+
+.cf-activity-dot.red {
+  background: #ef4444;
+}
+
+.cf-activity-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cf-activity-text {
+  font-size: 12px;
+  color: #374151;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cf-activity-text strong {
+  font-weight: 600;
+  color: #0D1B2A;
+}
+
+.cf-activity-time {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+
+@media (max-width: 1200px) {
+  .cf-folders-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cf-content {
+    flex-direction: column;
+  }
+
+  .cf-info-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cf-folders-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cf-metadata-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cf-metadata-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .case-files {
+    padding: 16px;
+  }
+
+  .cf-folders-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cf-folders-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cf-folders-actions {
+    flex-wrap: wrap;
+  }
+
+  .cf-top-main {
+    flex-direction: column;
+  }
+}
