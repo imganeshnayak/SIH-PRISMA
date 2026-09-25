@@ -10,23 +10,18 @@ function GovernmentSeal() {
       <circle cx="200" cy="200" r="195" fill="none" stroke="#4a5568" strokeWidth="4" opacity="0.12"/>
       <circle cx="200" cy="200" r="180" fill="none" stroke="#4a5568" strokeWidth="2" opacity="0.09"/>
       <path id="wtop" d="M55,200 A145,145 0 0,1 345,200" fill="none"/>
-      <text fontFamily="serif" fontSize="26" fill="#4a5568" opacity="0.12" fontWeight="bold" letterSpacing="5">
+      <text fontFamily="serif" fontSize="32" fill="#4a5568" opacity="0.12" fontWeight="bold" letterSpacing="5">
         <textPath href="#wtop" startOffset="50%" textAnchor="middle">भारत सरकार</textPath>
       </text>
-      <path id="wbot" d="M65,222 A140,140 0 0,0 335,222" fill="none"/>
-      <text fontFamily="Inter,sans-serif" fontSize="13" fill="#4a5568" opacity="0.12" fontWeight="600" letterSpacing="7">
+      <path id="wbot" d="M52,218 A148,148 0 0,0 348,218" fill="none"/>
+      <text fontFamily="Inter,sans-serif" fontSize="19" fill="#4a5568" opacity="0.12" fontWeight="600" letterSpacing="6">
         <textPath href="#wbot" startOffset="50%" textAnchor="middle">GOVERNMENT OF INDIA</textPath>
       </text>
       <circle cx="200" cy="200" r="112" fill="none" stroke="#4a5568" strokeWidth="2.5" opacity="0.09"/>
       <circle cx="200" cy="200" r="100" fill="none" stroke="#4a5568" strokeWidth="1" opacity="0.07"/>
-      <g transform="translate(200,178) scale(0.5)">
-        <rect x="-30" y="15" width="60" height="6" rx="1" fill="#4a5568" opacity="0.1"/>
-        <path d="M-26 15 C-26 6 0 -1 26 15" fill="#4a5568" opacity="0.1"/>
-        <rect x="-28" y="2" width="56" height="10" rx="1" fill="#4a5568" opacity="0.1"/>
-        <ellipse cx="0" cy="-16" rx="15" ry="11" fill="#4a5568" opacity="0.1"/>
-        <circle cx="0" cy="-32" r="11" fill="#4a5568" opacity="0.1"/>
-        <path d="M-9,-32 C-11,-42 -5,-48 0,-48 C5,-48 11,-42 9,-32" fill="#4a5568" opacity="0.1"/>
-      </g>
+      <path d="M55 200 l4 10 11 1 -8 7 3 11 -10 -6 -10 6 3 -11 -8 -7 11 -1z" fill="#4a5568" opacity="0.12"/>
+      <path d="M345 200 l4 10 11 1 -8 7 3 11 -10 -6 -10 6 3 -11 -8 -7 11 -1z" fill="#4a5568" opacity="0.12"/>
+      <image href="/images/emblem.svg" x="125" y="115" width="150" height="170" opacity="0.12" preserveAspectRatio="xMidYMid meet" />
     </svg>
   )
 }
@@ -57,7 +52,7 @@ export default function LoginPage() {
     <div className="page">
       <div className="left">
         <div className="bldg">
-          <img src="/images/building.jpg" alt="" className="bldg-img" />
+          <img src="/images/building-front.png" alt="" className="bldg-img" />
           <div className="bldg-tint"></div>
         </div>
         <div className="watermark">
@@ -106,7 +101,8 @@ export default function LoginPage() {
           <div className="login">
             <h1 className="welcome">Welcome Back</h1>
             <p className="wsub">Sign in to access the secure document system</p>
-            <form className="form" onSubmit={handleSubmit}>
+            <div className="login-panel">
+              <form className="form" onSubmit={handleSubmit}>
               <div className="fg">
                 <label className="fl">Service ID</label>
                 <div className="fi">
@@ -160,19 +156,20 @@ export default function LoginPage() {
                 <span>Continue</span>
                 <ArrowRight size={18} strokeWidth={2.2} />
               </button>
-            </form>
-            <div className="dvd">
+              </form>
+              <div className="dvd">
               <span className="dvdl"></span>
               <span className="dvdt">OR</span>
               <span className="dvdl"></span>
-            </div>
-            <div className="auth">
+              </div>
+              <div className="auth">
               <div className="authb">
                 <Shield size={22} className="shicon" strokeWidth={1.5} />
                 <div className="atxt">
                   <span className="atitle">Secured with Government Authentication</span>
                   <span className="amethods">DSC · Aadhaar eSign · 2FA</span>
                 </div>
+              </div>
               </div>
             </div>
           </div>
