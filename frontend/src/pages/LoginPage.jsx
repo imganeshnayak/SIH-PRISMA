@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-import { User, Lock, Eye, EyeOff, Users, ArrowRight, Shield, LockKeyhole, ChevronDown } from 'lucide-react'
+import { User, Lock, Eye, EyeOff, Users, ArrowRight, ShieldCheck, LockKeyhole, ChevronDown } from 'lucide-react'
 import './LoginPage.css'
 
 function GovernmentSeal() {
@@ -164,7 +164,7 @@ export default function LoginPage() {
               </div>
               <div className="auth">
               <div className="authb">
-                <Shield size={22} className="shicon" strokeWidth={1.5} />
+                <ShieldCheck size={22} className="shicon" strokeWidth={1.5} />
                 <div className="atxt">
                   <span className="atitle">Secured with Government Authentication</span>
                   <span className="amethods">DSC · Aadhaar eSign · 2FA</span>
